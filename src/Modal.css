@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.outerContainer {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainHeading {
+    position: relative;
+    background: rgb(162, 162, 207);
+    width: 100%;
+    min-height: 200px;
+}
+
+.body {
+    position: relative;
+    display: flex;
+    justify-items: space-between;
+    flex-direction: column;
+    background-color: green;
+    flex: 1 0 auto;
+    border: solid red;
+}
+
+.messagesContainer {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.messagesWrapper {
+    width: 100%;
+    height: 100%;
+    background: blueviolet;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.message {
+    min-height: 50px;
+    background: gold;
+    border-bottom: solid gray;
+    margin-bottom: 5px;
+}
+
+.inputArea {
+    background: pink;
+    flex: 1;
+}
